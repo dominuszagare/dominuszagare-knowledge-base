@@ -18,7 +18,7 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/docs/intro">
-            Create a VR app 
+            Enter 
           </Link>
         </div>
       </div>
@@ -31,7 +31,7 @@ export default function Home() {
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      description="Organizing my knowledge">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

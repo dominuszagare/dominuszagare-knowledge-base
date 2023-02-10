@@ -2,32 +2,7 @@ import React from 'react';
 import clsx from 'clsx';
 import styles from './styles.module.css';
 
-const FeatureList = [
-  {
-    title: 'Basic VR interactions',
-    description: (
-      <>
-        Contains teleportation, UI, object manipulation using controlers or hand tracking
-      </>
-    ),
-  },
-  {
-    title: 'ThreeJS',
-    description: (
-      <>
-        Built on top of the TreeJS libary
-      </>
-    ),
-  },
-  {
-    title: 'Desktop mode',
-    description: (
-      <>
-        Even without a VR headset you can interact with the app using mouse and keyboard.
-      </>
-    ),
-  },
-];
+const FeatureList = [];
 // <Svg className={styles.featureSvg} role="img" />
 function Feature({Svg, title, description}) {
   return (
