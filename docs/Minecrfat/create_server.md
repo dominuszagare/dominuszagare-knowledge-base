@@ -17,10 +17,9 @@ From the default one provided by Mojang to other community created ones like Pap
 
 ## Plugins and datapacks
 
-[Plugins](https://www.curseforge.com/minecraft/bukkit-plugins) and [datapacks](https://www.planetminecraft.com/data-packs/) can help augment the game on the server without the user having to do anything. They can completely change how the game plays or provide tools for admins to manage the server.
+[Plugins](https://www.curseforge.com/minecraft/bukkit-plugins) and [datapacks](https://www.planetminecraft.com/data-packs/) can help augment the game on the server without the user having to install anything on their end. They enable us to completely change how the game plays or provide tools for admins to manage the server.
 
 Datapacks can also be used to enrich singleplayer experiences.
-
 here are some other useful links:
 - [VanillaTweaks](https://vanillatweaks.net/picker/datapacks/)
 
