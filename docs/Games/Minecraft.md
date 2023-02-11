@@ -1,6 +1,3 @@
----
-sidebar_position: 1
----
 # Minecraft
 
 Minecraft is writen in Java and runs on a Java virtual machine on broad range of devices and operating systems. Thats why you need to install [Java](https://www.java.com/download/ie_manual.jsp) on your machine before you can launch Minecraft-Java-edition.
@@ -14,6 +11,8 @@ From the default one provided by Mojang to other community created ones like Pap
 - [Fabric](https://fabricmc.net/use/server/) (for modded Minecraft based on fabric API)
 - [Forge](https://files.minecraftforge.net/net/minecraftforge/forge/) (for modded Minecraft based on forge API)
 - [Default](https://www.minecraft.net/en-us/download/server) server provided by Mojang
+
+- [LazyMC](https://github.com/timvisee/lazymc)(Put your Minecraft server to rest when idle)
 
 ## Plugins and datapacks
 
@@ -64,3 +63,17 @@ Baritone and Wurst are great tool but refrain using them on multiplayer servers 
 - [Sodium](https://github.com/CaffeineMC/sodium-fabric) (improve framerate)
 - [Phosphor](https://github.com/CaffeineMC/phosphor-fabric) (improve lighting)
 - [Create](https://github.com/Creators-of-Create/Create) (technical mod)
+- [Schematica](https://beta.curseforge.com/minecraft/mc-mods/schematica) (schematic viewer)
+- [WorldEdit](https://github.com/EngineHub/WorldEdit)(world editing)
+- [WorldEditCUI](https://github.com/EngineHub/WorldEditCUI)(visualize worldedit selections)
+## Other links 
+
+
+- [MineRL](https://minerl.io/) (Minecraft Reinforcement Learning)
+- [GANcraft](https://nvlabs.github.io/GANcraft/) (Realistic Minecraft generation using GANs)
+- [CraftAssist](https://github.com/facebookresearch/craftassist)(Minecraft AI)
+- [MCview](https://github.com/kbinani/mcview) (Minecraft map viewer)
+- [MinecarftHDL](https://github.com/itsFrank/MinecraftHDL) (Generate redstone logic circuits)
+- [Minecraft performance](http://optifog.blogspot.com/2011/08/understanding-minecraft-performance.html) (Minecraft performance guide)
+
+- [All is cubes](https://github.com/kpreid/all-is-cubes)(Voxel game engine writen in rust)

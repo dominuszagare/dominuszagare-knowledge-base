@@ -5,7 +5,8 @@
 This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
 All the documentation is written in Markdown and located in the `docs` directory.
-[Markdown guide](https://www.markdownguide.org/basic-syntax/)
+- [Markdown guide](https://www.markdownguide.org/basic-syntax/)
+- [Markdown book](https://rust-lang.github.io/mdBook/index.html)
 
 ### Installation
 

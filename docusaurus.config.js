@@ -69,7 +69,7 @@ const config = {
           },
           /*{to: '/blog',label: 'Različice', position: 'left'},*/
           {
-            href: 'https://github.com/dominuszagare/dominuszagare-knowledge-base',
+            href: 'https://github.com/dominuszagare',
             label: 'GitHub',
             position: 'right',
           },
