@@ -1,6 +1,6 @@
 {
-  "label": "Food",
-  "position": 2,
+  "label": "Rust",
+  "position": 1,
   "link": {
     "type": "generated-index"
   }

@@ -18,6 +18,8 @@ The gist is that the computer reads instruction from memory and then manipulates
 
 Registers to a programer are nothing more than some address in memory. To find that address we have to consult a memory map inside a reference manual that contains a lot of useful information on integrated systems of the microcontroler.
 
+**Refrence manual can be downloaded from documentation tab in the STM32 Target selector.**
+
 ![RegisterMap](../img/register_map_stm32F401.png)
 
 Inside the reference manual we also find detail instruction on what each bit inside each register does.

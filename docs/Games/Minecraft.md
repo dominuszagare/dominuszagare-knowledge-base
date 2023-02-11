@@ -1,9 +1,9 @@
 ---
 sidebar_position: 1
 ---
-# Running the game
+# Minecraft
 
-Minecarft is writen in Java and runs on a Java virtual machine on broad range of devices and operating systems. Thats why you need to install [Java](https://www.java.com/download/ie_manual.jsp) on your machine before you can launch Minecraft-Java-edition.
+Minecraft is writen in Java and runs on a Java virtual machine on broad range of devices and operating systems. Thats why you need to install [Java](https://www.java.com/download/ie_manual.jsp) on your machine before you can launch Minecraft-Java-edition.
 
 ## Minecraft servers
 
