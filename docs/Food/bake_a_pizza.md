@@ -1,5 +1,7 @@
 # Create a Pizza
 
+![pizza](../img/IMG_20230210_144046_edit_420001294177576.jpg)
+
 ## Ingredients
 
 - 250 - 295g flour
