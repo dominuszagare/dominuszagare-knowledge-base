@@ -1,6 +1,3 @@
----
-sidebar_position: 1
----
 # Binary search tree
 
 A binary search tree is a binary tree where the value of each node is larger or equal to the values in all the nodes in that node's left subtree and is smaller than the values in all the nodes in that node's right subtree.

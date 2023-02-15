@@ -1,6 +1,3 @@
----
-sidebar_position: 1
----
 # Red Black Tree
 
 A red-black tree is a kind of self-balancing binary search tree in computer science. Each node of the binary tree has an extra bit, and that bit is often interpreted as the color (red or black) of the node. These color bits are used to ensure the tree remains approximately balanced during insertions and deletions.
@@ -41,7 +38,7 @@ A red-black tree is a kind of self-balancing binary search tree in computer scie
 
 Implementing a red black tree in rust is a bit tricky. The main problem is that rust doesn't allow you to have a mutable reference to a struct and a mutable reference to one of its fields at the same time. This is a problem because we need to be able to have a mutable reference to the root node and a mutable reference to the parent node at the same time. To solve this problem we will use the [RefCell](https://doc.rust-lang.org/std/cell/struct.RefCell.html) type. This type allows us to have multiple mutable references to the same data. This is a bit unsafe because we can have multiple mutable references to the same data at the same time. This is why we will use the [RefCell](https://doc.rust-lang.org/std/cell/struct.RefCell.html) type only when we need to have multiple mutable references to the same data.
 
-![SmartPointers](../img/Rust_smart_pointers_tree_example.png)
+![SmartPointers](../../img/Rust_smart_pointers_tree_example.png)
 
 ```rust
 

@@ -56,6 +56,8 @@ Using a No-Premium launcher without actually owning an original copy can be inte
 On the topic of unendorsed behavior your can not only mood the game to add new content but to also cheat using [Wurst](https://www.wurstclient.net/) or [Baritone](https://github.com/cabaletta/baritone). Both are tools allowing to automate the player actions or see information that would be otherwise be hidden. This is often seen as cheating as it can also give you a unfair advantage over other players.
 
 Baritone and Wurst are great tool but refrain using them on multiplayer servers because they can ruin the experience for other people.
+[Baritone commands start wit prefix #](https://github.com/cabaletta/baritone/blob/master/USAGE.md)
+
 
 ## Mods I like
 - [plasmo-voice](https://github.com/plasmoapp/plasmo-voice) (ingame voicechat)
