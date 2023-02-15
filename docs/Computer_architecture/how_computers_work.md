@@ -17,3 +17,9 @@ Faster the clock faster the execution of instructions.
 memory's only job isn't only storing values and instructions. It can also interface with **input** and **output** devices. Where the input devices effect the value in memory and memory effect the state of output devices.
 
 - [Difference between Horizontal and Vertical micro-programmed Control Unit](https://www.geeksforgeeks.org/difference-between-horizontal-and-vertical-micro-programmed-control-unit/)
+
+## Links
+
+- [Computer architecture](https://en.wikipedia.org/wiki/Computer_architecture)
+- [Computer Architecture – ETH Zürich – Fall 2019](https://safari.ethz.ch/architecture/fall2019/doku.php?id=schedule) ([HN](https://news.ycombinator.com/item?id=21631116))
+- [David Patterson: Computer Architecture and Data Storage (2020)](https://lexfridman.com/david-patterson/)
