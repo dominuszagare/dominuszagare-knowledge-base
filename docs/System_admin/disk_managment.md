@@ -7,3 +7,6 @@
 ### Errors
 
 There may be metadata on the disk from windows that linux doesn't understand or you get an error that the disk is unclean. This can be fixed by running [`ntfsfix`](https://askubuntu.com/questions/462381/cant-mount-ntfs-drive-the-disk-contains-an-unclean-file-system) on the disk.
+
+If it complains about windows hibernation perform complete shutdown with a comandline comand: `shutdown /s`
+[Form link to solution](https://askubuntu.com/questions/462381/cant-mount-ntfs-drive-the-disk-contains-an-unclean-file-system)
