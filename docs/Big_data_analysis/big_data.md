@@ -15,7 +15,7 @@ Big data is characterized by the 5 V's:
 
 #### Volume
 
-Volume refers to the size of the data set. Big data is often characterized by a large volume of data. The volume of data can be measured in terabytes, petabytes, exabytes, zettabytes, yottabytes, etc.
+Volume refers to the size of the data set. Big data is often characterized by a large volume of data. The volume of data can be measured in megabytes, gigabytes, terabytes, petabytes, exabytes, etc.
 
 #### Velocity
 

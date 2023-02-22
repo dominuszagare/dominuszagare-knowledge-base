@@ -1,11 +1,12 @@
 # Covering human needs
 
-Computers have enormus potencial to make the world a better place. They can help us solve problems, make our lives easier, and make the world a better place. But to do that they need to be designed to cover human needs.
+Computers have enormous potential to make the world a better place. They can help us solve problems, make our lives easier, and make the world a better place. But to do that they need to be designed to cover human needs.
 
 ## For what purpose?
 
-If you are thinking of a product to solve a problem you should ask yourself why should yo make it and the answer is: because I can. I have the technology, i have the resources, and the will. I can do it, and I should do it. That is not what you should be thinking. You should be thinking about if people realy want your prodocut and witch human needs it covers? You should also think on the implications of your prodoct on society and on how can it make the world a better place?
+If you are thinking of a product to solve a problem you should ask yourself why should yo make it and the answer is: because I can. I have the technology, i have the resources, and the will. I can do it, and I should do it. That is not what you should be thinking. You should be thinking about if people really want your product and what problems does it solve? You should also think on the implications of your product on society and on how can it make the world a better place?
 
+When asking people for opinion don't ask them if they think your product is good. Ask them what every day problems they have. Then you can start to design your product to solve those problems. You can also ask them what they would like to see in the future.
 ## What are human needs?
 
 Human needs are the needs that humans have. They are the needs that humans have to survive. They are the needs that humans have to be happy. They are the needs that humans have to be healthy. They are the needs that humans have to...
