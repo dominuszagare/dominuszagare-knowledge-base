@@ -25,3 +25,7 @@ Registers to a programer are nothing more than some address in memory. To find t
 Inside the reference manual we also find detail instruction on what each bit inside each register does.
 
 ![OutputRegister](../img/GPIO_output_register.png)
+
+## Links
+
+- [Interupts](https://www.embedded.com/programming-embedded-systems-how-interrupts-work-in-arm-cortex-m/)
