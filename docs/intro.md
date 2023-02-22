@@ -23,6 +23,7 @@ If you want to contribute to this project you can make a pull request or join th
 - [Join](https://discord.gg/zRvwtKuezy)
 ## Writing the docs
 
+- [Tutorual](https://blog.logrocket.com/easy-documentation-with-docusaurus/)
 - [Docusaurus](https://docusaurus.io/)
 - [Markdown guide](https://www.markdownguide.org/basic-syntax/)
 - [Markdown book](https://rust-lang.github.io/mdBook/index.html)

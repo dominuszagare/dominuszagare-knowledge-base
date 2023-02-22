@@ -18,7 +18,7 @@ Steps:
 8. Configure any other peripheral you need
 
 STM32TargetSelector
-![STM32TargetSelector](../img/targetSelector.png)
+![STM32TargetSelector](../../img/targetSelector.png)
 
 ## Library files
 If in your project you decide to have library files outside the **\Src** and **\Inc** folders then we must specify under project properties the files location so the linker can find the library files.

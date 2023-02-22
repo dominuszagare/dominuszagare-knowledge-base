@@ -36,14 +36,11 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
+
+          // edit this page
+          editUrl:
+          'https://github.com/dominuszagare/dominuszagare-knowledge-base/blob/main/',
           },
-        /*blog: {
-          showReadingTime: false,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          },*/
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -78,6 +75,16 @@ const config = {
       footer: {
         style: 'light',
         links: [
+          {
+            title: 'Community',
+            items: [
+              {
+                label: 'Discord',
+                href: 'https://discord.gg/zRvwtKuezy',
+              },
+            ]
+          }
+          
           /*{
             title: 'Docs',
             items: [
@@ -93,10 +100,6 @@ const config = {
               {
                 label: 'Stack Overflow',
                 href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
               },
               {
                 label: 'Twitter',
@@ -118,7 +121,7 @@ const config = {
             ],
           },*/
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} ThreeJS_VR_app_quickstart.`,
+        copyright: `Copyright © ${new Date().getFullYear()} dominuszagare.`,
       },
       prism: {
         theme: lightCodeTheme,
