@@ -4,13 +4,13 @@ Regular expressions are a powerful tool for text processing. They are used in ma
 
 ## Syntax
 
-- [A-z] - any letter
-- [0-9] - any digit
-- [A-z0-9] - any letter or digit
-- [^A-z] - any character that is not a letter
-- [^0-9] - any character that is not a digit   
-- [^A-z0-9] - any character that is not a letter or digit
-- [A-z0-9_] - any letter, digit or underscore
+- `[A-z]` - any letter
+- `[0-9]` - any digit
+- `[A-z0-9]` - any letter or digit
+- `[^A-z]` - any character that is not a letter
+- `[^0-9]` - any character that is not a digit   
+- `[^A-z0-9]` - any character that is not a letter or digit
+- `[A-z0-9_]` - any letter, digit or underscore
 ...
 
 ## Examples
