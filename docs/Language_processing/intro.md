@@ -13,10 +13,19 @@ Language processing is a subfield of computer science, information engineering, 
 - [WordNet](https://wordnet.princeton.edu/)
 - [GNU Aspell](http://aspell.net/)
 
-## Finding scientific articles on the topic
+## Exercise
+
+### Finding scientific articles on the topic
 
 - [Google Scholar](https://scholar.google.com/)
 - [cobiss+](https://plus.cobiss.net/cobiss/si/sl/bib/search)
 - [IEEE Xplore](https://ieeexplore.ieee.org/Xplore/guesthome.jsp)
 - [ACM Digital Library](https://dl.acm.org/)
 - [University of Maribor NIK](https://eds.s.ebscohost.com/eds/search/basic?vid=0&sid=9f26e2d4-8f9b-430b-b834-9f9d37f92190%40redis)
+
+- [How to read a paper](https://web.stanford.edu/class/ee384m/Handouts/HowtoReadPaper.pdf)
+
+### Recreating results from a paper
+
+As a exercise we will try and recreate results from a paper in the field of language processing. With this we will get a better understanding of the field and the tools used in it.
+
