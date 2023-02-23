@@ -1,6 +1,6 @@
 # Regular expressions
 
-Regular expressions are a powerful tool for text processing. They are used in many programming languages, and are also available in the shell. Regular expressions are a domain-specific language (DSL) for describing patterns in text. They are a powerful tool for text processing, and are used in many programming languages, and are also available in the shell.
+Regular expressions are a powerful tool for text processing. They are used in many programming languages, and are also available in the shell. Regular expressions are a domain-specific language (DSL) for describing patterns in text.
 
 ## Syntax
 
@@ -26,3 +26,5 @@ Find a word that starts with a capital letter and ends with a dot:
 
 - [Regular expressions](https://en.wikipedia.org/wiki/Regular_expression)
 - [Regular expressions 101](https://regex101.com/)
+- [Regular expressions in Python](https://docs.python.org/3/library/re.html)
+- [Regular expressions in Bash](https://www.gnu.org/software/bash/manual/html_node/Regular-Expressions.html)
