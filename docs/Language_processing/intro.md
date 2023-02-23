@@ -13,3 +13,10 @@ Language processing is a subfield of computer science, information engineering, 
 - [WordNet](https://wordnet.princeton.edu/)
 - [GNU Aspell](http://aspell.net/)
 
+## Finding scientific articles on the topic
+
+- [Google Scholar](https://scholar.google.com/)
+- [cobiss+](https://plus.cobiss.net/cobiss/si/sl/bib/search)
+- [IEEE Xplore](https://ieeexplore.ieee.org/Xplore/guesthome.jsp)
+- [ACM Digital Library](https://dl.acm.org/)
+- [University of Maribor NIK](https://eds.s.ebscohost.com/eds/search/basic?vid=0&sid=9f26e2d4-8f9b-430b-b834-9f9d37f92190%40redis)
