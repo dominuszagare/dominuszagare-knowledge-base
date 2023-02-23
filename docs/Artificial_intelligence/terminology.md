@@ -1,5 +1,7 @@
 # Terminology
 
+- [Neural networks](https://wiki.pathmind.com/neural-network)
+
 This page contains a list of terms used in the field of artificial intelligence.
 
 ## Classification
