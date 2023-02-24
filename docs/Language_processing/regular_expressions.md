@@ -11,7 +11,7 @@ Regular expressions are a powerful tool for text processing. They are used in ma
 - `+` - match one or more occurrences of the preceding expression
 - `?` - match zero or one occurrences of the preceding expression
 - `|` - match either of the expressions
-- `()` - group expressions
+- `()` - group expressions (usually to define subpatterns)
 - `{}` - match a specific number of occurrences of the preceding expression
 - `[]` - match any character in the brackets
 - `[^]` - match any character not in the brackets
@@ -43,7 +43,25 @@ Regular expressions are a powerful tool for text processing. They are used in ma
 - `\S` not whitespace
 - `\w` word
 - `\W` not word
+- `\b` word boundary
+- `\B` not word boundary
 - `[class]` charachter clas 
+- `[^class]` negated character class
+
+### character classes
+
+[:alnum:] - alphanumeric characters
+[:alpha:] - alphabetic characters
+[:blank:] - space and tab characters
+[:cntrl:] - control characters
+[:digit:] - digit characters
+[:graph:] - printable characters excluding space
+[:lower:] - lowercase letters
+[:print:] - printable characters including space
+[:punct:] - punctuation characters
+[:space:] - whitespace characters
+[:upper:] - uppercase letters
+[:xdigit:] - hexadecimal digit characters
 ## Links
 
 - [Regex tester](https://www.regextester.com/96872)
@@ -113,10 +131,10 @@ Find all words that start with a capital letter and end with a dot:
 Syntax is similar to [C++ ECMAScript syntax](https://cplusplus.com/reference/regex/ECMAScript/)
 
 This implementation of regex doesn't support `<=`look ahead or `=>` behind expression. 
-
 `r` and `t` are Rust lifetimes of a compiled regular expression and text to search, respectively.
+All searching is done with an implicit `.*?` at the beginning and end of an expression. 
 
-All searching is done with an implicit `.*?` at the beginning and end of an expression. To force an expression to match the whole string (or a prefix or a suffix), you must use an anchor like `^` or `$` (or `\A` and `\z`).
+To force an expression to match the whole string (or a prefix or a suffix), you must use an anchor like `^` or `$` (or `\A` and `\z`).
 
 ### Rust examples
 
