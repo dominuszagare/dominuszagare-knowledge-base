@@ -23,16 +23,30 @@ Regular expressions are a powerful tool for text processing. They are used in ma
 - `[^0-9]` - any character that is not a digit   
 - `Abc+` - one or more occurrences of `Abc`
 
-## Examples
+## ECMAScript syntax
 
-Find a word that starts with a capital letter:
-    grep -E "[A-Z][a-z]+" file.txt
+[ECMAScript](https://cplusplus.com/reference/regex/ECMAScript/) is a regular expression syntax used in JavaScript and other languages. It is similar to the POSIX syntax, but with some differences.
 
-Find a word that starts with a capital letter and ends with a dot:
-    grep -E "[A-Z][a-z]+." file.txt
+### special characters
 
+- `\t` Tab
+- `\n` Newline
+- `\r` Carriage return
+- `\v` Vertical tab
+- `\f` Form feed
+- `\0` Null character
+- `\xhh` Character with hexadecimal value hh (00–FF)
+- `\uhhhh` Character with hexadecimal value hhhh (0000–FFFF)
+- `\d` digit
+- `\D` not digit
+- `\s` whitespace
+- `\S` not whitespace
+- `\w` word
+- `\W` not word
+- `[class]` charachter clas 
 ## Links
 
+- [Regex tester](https://www.regextester.com/96872)
 - [Regular expressions](https://en.wikipedia.org/wiki/Regular_expression)
 - [Regular expressions 101](https://regex101.com/)
 - [Regular expressions in Python](https://docs.python.org/3/library/re.html)
@@ -94,7 +108,15 @@ Find all words that start with a capital letter and end with a dot:
 ## Rust analyzing large amounts of files
 
 - [Rust iterating through files](https://doc.rust-lang.org/std/fs/fn.read_dir.html)
-- [Regular expressions in Rust](https://docs.rs/regex/1.3.9/regex/)
+- [Regular expressions in Rust](https://docs.rs/regex/1.7.1/regex/struct.Regex.html)
+
+Syntax is similar to [C++ ECMAScript syntax](https://cplusplus.com/reference/regex/ECMAScript/)
+
+This implementation of regex doesn't support `<=`look ahead or `=>` behind expression. 
+
+`r` and `t` are Rust lifetimes of a compiled regular expression and text to search, respectively.
+
+All searching is done with an implicit `.*?` at the beginning and end of an expression. To force an expression to match the whole string (or a prefix or a suffix), you must use an anchor like `^` or `$` (or `\A` and `\z`).
 
 ### Rust examples
 
@@ -115,3 +137,21 @@ Find all words that start with a capital letter and end with a dot:
         }
     }
 ```
+
+### Rust get substring from a string
+
+```rust
+    let s = "Hello, world!";
+    let hello = &s[0..5];
+    let world = &s[7..12];
+```
+
+### Get substring position
+
+```rust
+    let s = "Hello, world!";
+    let pos = s.find("world").unwrap();
+    let world = &s[pos..pos + 5];
+```
+## Regex with C++
+
