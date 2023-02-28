@@ -41,38 +41,6 @@ Implementing a red black tree in rust is a bit tricky. The main problem is that 
 ![SmartPointers](../../img/Rust_smart_pointers_tree_example.png)
 
 ```rust
-
-Skip to content
-Pull requests
-Issues
-Codespaces
-Marketplace
-Explore
-@dominuszagare
-dominuszagare /
-homework
-Private
-
-Cannot fork because you own this repository and are not a member of any organizations.
-
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-
-    Settings
-
-homework/Izbrani_algoritmi/RBTree/src/main.rs /
-@dominuszagare
-dominuszagare finishing up
-Latest commit cf6837a Jan 13, 2023
-History
-1 contributor
-686 lines (578 sloc) 18.8 KB
 use std::rc::Rc;
 use std::cell::RefCell;
 use std::env;
