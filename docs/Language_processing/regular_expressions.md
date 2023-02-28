@@ -156,7 +156,7 @@ Find all words that start with a capital letter and end with a dot:
     }
 ```
 
-### Rust get substring from a string
+### Find XML tag
 
 ```rust
     let s = "Hello, world!";
@@ -167,9 +167,23 @@ Find all words that start with a capital letter and end with a dot:
 ### Get substring position
 
 ```rust
-    let s = "Hello, world!";
-    let pos = s.find("world").unwrap();
-    let world = &s[pos..pos + 5];
+    fn get_xml_tags(data: &String, tag: &str) -> Vec<String> {
+    let mut matches = Vec::new();
+    if(data.is_empty()){
+        return matches;
+    }
+    let re = Regex::new(&format!(r"(<\s*{}\s*.+?(/>|(>(.|\n)*?</\s*{}\s*>)))",tag,tag));
+    if(re.is_err()){
+        println!("Error in regex: {:?}",re.err());
+        return matches;
+    }
+    //get all matches
+    for cap in re.unwrap().captures_iter(data) {
+        if cap.len() > 0 {
+            matches.push(cap[0].to_string());
+        }
+    }
+    matches
+}
 ```
-## Regex with C++
 

@@ -1,6 +1,8 @@
 ---
 sidebar_position: 1
 ---
+- [Embeded systems with Rust](https://docs.rust-embedded.org/discovery/)
+- [Programing STM32 in Rust](https://medium.com/digitalfrontiers/rust-on-a-stm32-microcontroller-90fac16f6342)
 
 # Why use STM32
 
