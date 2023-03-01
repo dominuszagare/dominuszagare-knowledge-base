@@ -29,3 +29,13 @@ Language processing is a subfield of computer science, information engineering, 
 
 As a exercise we will try and recreate results from a paper in the field of language processing. With this we will get a better understanding of the field and the tools used in it.
 
+### Some examples of scientific articles:
+- [Melody-Conditioned Lyrics Generation with SeqGANs](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9327976)
+- [Automated generation of song lyrics using CFGs](https://www.researchgate.net/publication/286814466_Automated_generation_of_song_lyrics_using_CFGs)
+- [Towards A Computational Model of Poetry Generation](https://www.researchgate.net/publication/2349215_Towards_A_Computational_Model_of_Poetry_Generation)
+- [Natural language processing of lyrics](https://www.researchgate.net/publication/221573745_Natural_language_processing_of_lyrics)
+- [Modeling Structural Topic Transitions for Automatic Lyrics Generation](https://aclanthology.org/Y14-1049.pdf)
+- [Markov Constraints for Generating Lyrics with Style](https://www.researchgate.net/publication/236166532_Markov_Constraints_for_Generating_Lyrics_with_Style)
+- [Automated Generation of Sinhala Lyrics using Recurrent Neural Networks](http://ir.kdu.ac.lk/bitstream/handle/345/2934/FOC%2096-106.pdf?sequence=1)
+
+More examples might be found on: [Google Scolar](https://scholar.google.com/scholar?start=20&q=Automated+generation+of+song+lyrics&hl=sl&as_sdt=0,5)
