@@ -1,0 +1,21 @@
+# instaling software packages on linux
+Installing from web sources:
+`sudo dnf install curl -y`
+or:
+`sudo dnf install wget -y`
+
+depending on the system we use different package managers:
+- `dnf` for fedora
+- `apt` for debian
+- `pacman` for arch
+
+## example instaling anaconda
+
+1. get instaler resource from web [archive](https://repo.anaconda.com/archive/)
+2. download instaler `curl --output anaconda.sh https://repo.anaconda.com/archive/Anaconda3-2022.10-Linux-x86_64.sh`
+3. run instaler `bash anaconda.sh`
+
+### launch anaconda
+
+Launching anaconda navigator: `anaconda-navigator`
+Choosing environment: `conda activate myenv`
