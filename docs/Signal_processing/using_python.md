@@ -71,3 +71,34 @@ if __name__ == '__main__':
     plt.show()
 
 ```
+
+### Ploting realtime data
+
+It similar to plotting normal data but we use a `FunAnimation()` to update the plot with new data
+
+```python
+import matplotlib.pyplot as plt
+from matplotlib.animation import FuncAnimation
+import math
+
+if __name__ == '__main__':
+
+    fig = plt.figure()
+    ax = fig.add_subplot(111)
+
+    phase = 0
+    data = [0,0,0,0,0,0,0,0,0,0]
+
+    def update_data(args):
+        global phase
+        #generate new data
+        phase += 1
+        for i in range(10):
+            data[i] = math.sin(phase+i)
+
+        ax.cla() #clear previous data
+        ax.plot(data)
+
+    ani = FuncAnimation(fig, update_data, interval=200)
+    plt.show()
+```
