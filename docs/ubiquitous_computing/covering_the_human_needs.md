@@ -21,23 +21,23 @@ Maslow's hierarchy of needs is a theory in psychology proposed by Abraham Maslow
 4. Esteem needs
 5. Self-actualization needs
 
-#### Physiological needs
+#### 1. Physiological needs
 
 Physiological needs are the most basic needs. They are the needs that are required for survival. They include the need for food, water, shelter, and sleep.
 
-#### Safety needs
+#### 2. Safety needs
 
 Safety needs are the needs that are required for safety. They include the need for security, order, law, stability, and freedom from fear.
 
-#### Belongingness and love needs
+#### 3. Belongingness and love needs
 
 Belongingness and love needs are the needs that are required for social interaction. They include the need for friendship, intimacy, and family.
 
-#### Esteem needs
+#### 4. Esteem needs
 
 Esteem needs are the needs that are required for self-esteem. They include the need for achievement, status, dominance, respect from others, and respect by others.
 
-#### Self-actualization needs
+#### 5. Self-actualization needs
 
 Self-actualization needs are the needs that are required for personal growth. They include the need for self-fulfillment, seeking personal potential, and self-actualization.
 
@@ -45,9 +45,9 @@ Self-actualization needs are the needs that are required for personal growth. Th
 
 Alderfer's ERG theory is a theory in psychology proposed by Clayton Alderfer in his 1969 paper "An Empirical Test of a New Theory of Human Needs". Alderfer's ERG theory is a pyramid that contains three levels of needs. The lower levels of the pyramid are the most basic needs, and the higher levels are the more advanced needs. The three levels of needs are:
 
-1. Existence needs
-2. Relatedness needs
-3. Growth needs
+1. Existence needs (Masslow's 1. and 2.)
+2. Relatedness needs (Masslow's 3. and 4.)
+3. Growth needs (Masslow's 5.)
 
 #### Existence needs
 
@@ -60,6 +60,36 @@ Relatedness needs are the needs that are required for social interaction. They i
 #### Growth needs
 
 Growth needs are the needs that are required for personal growth. They include the need for self-fulfillment, seeking personal potential, and self-actualization.
+
+## The Apollonian and Dionysian
+
+The Apollonian and Dionysian are two opposing forces in Greek mythology. They are the forces that are in conflict with each other. They are the forces that are in balance with each other. They are the forces that are in harmony with each other.
+
+They are also terms used by Friedrich Nietzsche in his book The Birth of Tragedy, from 1872, where he explores the tension between those two opposing forces in art, but that could be applied to life.
+
+Apollonian values are grounded in logical thought and its adherents strive to develop clear, rational philosophy which seeks to bring meaning and understanding to life’s complexities. Nietzsche argued that by relying solely on the Apollonian aspects of ourselves we can become too rigid in our thinking and fail to take into account the subjective views offered by our emotions.
+
+On the other hand, Dionysian values embrace chaos, passion, emotion, and pleasure as essential parts of life. Nietzsche believed that by embracing these wilder sides of ourselves, we could achieve an authentic connection with our true nature, ultimately leading us closer to enlightenment. Nietzsche argued that we must be open-minded enough to explore different perspectives, even if they go against conventional wisdom or accepted beliefs.
+
+- [Explaning Nietzsche's Apollonian and Dionysian](https://medium.com/the-philosophy-hub/the-apollonian-and-dionysian-explaining-nietzsche-9576d3cd1a75)
+- [What Nietzsche really meant: Apollonian and Dionysian](https://bigthink.com/personal-growth/what-nietzsche-really-meant-the-apollonian-and-dionysian/)
+
+### The Apollonian
+
+- Thinking
+- Rational, logical
+- Ordered
+- Celebration of culture
+
+
+### The Dionysian
+
+- Feeling
+- Emotional, passionate
+- Chaotic
+- Celebration of nature
+- Brute realism & absurdity
+
 
 
 

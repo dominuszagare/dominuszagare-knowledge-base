@@ -9,6 +9,11 @@ depending on the system we use different package managers:
 - `apt` for debian
 - `pacman` for arch
 
+## adding snap support
+
+On fedora we can install snap support with: `sudo dnf install snapd`
+After that we need to enable snap support: `sudo ln -s /var/lib/snapd/snap /snap`
+
 ## example instaling anaconda
 
 1. get instaler resource from web [archive](https://repo.anaconda.com/archive/)

@@ -71,7 +71,6 @@ if __name__ == '__main__':
     plt.show()
 
 ```
-
 ### Ploting realtime data
 
 It similar to plotting normal data but we use a `FunAnimation()` to update the plot with new data
@@ -101,4 +100,59 @@ if __name__ == '__main__':
 
     ani = FuncAnimation(fig, update_data, interval=200)
     plt.show()
+```
+
+!Note: animation is not supported in the jupyter notebook but plotting data normally works fine.
+
+## Creating GUI for our application
+
+Creating useful GUI for your aplication can be time consuming. A fast and easy way to create GUI is to use a GUI designer. There are several GUI designers for python. The following example shows how to use QT Designer to create a GUI for our application.
+
+- [QT Designer](https://realpython.com/qt-designer-python/#getting-started-with-qt-designer)
+
+Once you desinged your GUI, you can use the `pyuic5` command to convert the `.ui` file to a `.py` file. This file can be imported in your python code.
+
+```pyuic5 -o <output file>.py <input file>.ui```
+
+```bash
+
+### Embeding matplotlib plots in QT Designer
+
+- [Embeding matplotlib plots in QT Designer](https://matplotlib.org/stable/gallery/user_interfaces/embedding_in_qt_sgskip.html)
+
+First you need to create a empty widget in QT Desiner. Then in python you need to create a `FigureCanvasQTAgg` object and add it to the widget.
+
+## Alternative using pyROOT to plot data
+
+[PyROOT](https://root.cern/manual/python/) is a python module that allows you to use the ROOT libraries in python. The following example shows how to use pyROOT to plot data. It is able to plot data from numpy arrays and pandas dataframes.
+
+### install pyROOT
+
+There are several ways to install pyROOT. The easiest way is to install it with conda.
+
+[More on ROOT installation](https://root.cern/install/)
+
+### example
+
+```python
+
+import ROOT
+
+if __name__ == '__main__':
+
+    # create a canvas
+    canvas = ROOT.TCanvas("canvas", "canvas", 800, 600)
+
+    # create a histogram
+    hist = ROOT.TH1F("hist", "hist", 100, 0, 100)
+
+    # fill the histogram
+    hist.FillRandom("gaus", 1000)
+
+    # draw the histogram
+    hist.Draw()
+
+    # show the plot
+    canvas.Draw()
+
 ```
