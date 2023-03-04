@@ -114,13 +114,41 @@ Once you desinged your GUI, you can use the `pyuic5` command to convert the `.ui
 
 ```pyuic5 -o <output file>.py <input file>.ui```
 
-```bash
-
 ### Embeding matplotlib plots in QT Designer
 
 - [Embeding matplotlib plots in QT Designer](https://matplotlib.org/stable/gallery/user_interfaces/embedding_in_qt_sgskip.html)
 
-First you need to create a empty widget in QT Desiner. Then in python you need to create a `FigureCanvasQTAgg` object and add it to the widget.
+- [Another similar way](https://yapayzekalabs.blogspot.com/2018/11/pyqt5-gui-qt-designer-matplotlib.html)
+
+First you need to create a empty widget in QT Desiner and promote it to is own class. Then in python you need to create a add a FigureCanvas to that widget. You dont really need to create a new class for the widget. You can just add the FigureCanvas to the widget when initializing your GUI
+
+Widget definition in python:
+
+```python
+
+from PyQt5.QtWidgets import*
+
+from matplotlib.backends.backend_qtagg import FigureCanvas
+
+from matplotlib.figure import Figure
+
+    
+class MplWidget(QWidget):
+    
+    def __init__(self, parent = None):
+
+        QWidget.__init__(self, parent)
+        
+        self.canvas = FigureCanvas(Figure())
+        
+        vertical_layout = QVBoxLayout()
+        vertical_layout.addWidget(self.canvas)
+        
+        self.canvas.axes = self.canvas.figure.add_subplot(111)
+        self.setLayout(vertical_layout)
+
+```
+
 
 ## Alternative using pyROOT to plot data
 
