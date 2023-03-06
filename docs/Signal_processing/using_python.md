@@ -1,46 +1,49 @@
 # Using python for signal processing
 
-## Multithreading
 
-python can often be slow when processing large amounts of data. To speed up the processing, you can use the `multiprocessing` module. This module allows you to run multiple processes in parallel. The following example shows how to use this module to speed up the processing of a large amount of data. It also useful to use multithreading to implement responsive GUI controls to control the processes in your program.
+## Creating GUI for our application
+
+Creating useful GUI for your aplication can be time consuming. A fast and easy way to create GUI is to use a GUI designer. The guide linked bellow shows how to install and use QT Designer on multiple platforms Windows Mac Linux. QT Designer is a GUI designer that comes with the PyQt5 library. It is a very powerful tool that allows you to create complex GUIs with ease. It also allows you to embed matplotlib plots in your GUI.
+
+- [QT Designer](https://realpython.com/qt-designer-python/#getting-started-with-qt-designer)
+
+Once you desinged your GUI, you can use the `pyuic5` command to convert the `.ui` file to a `.py` file. This file can be imported in your python code.
+
+```pyuic5 -o <output file>.py <input file>.ui```
+
+### Embeding matplotlib plots in QT Designer
+
+- [Embeding matplotlib plots in QT Designer](https://matplotlib.org/stable/gallery/user_interfaces/embedding_in_qt_sgskip.html)
+
+Good tutorial but is not in english. Plenty of nice pictures though.
+- [Another similar way](https://yapayzekalabs.blogspot.com/2018/11/pyqt5-gui-qt-designer-matplotlib.html)
+
+First you need to create a empty widget in QT Desiner and promote it to is own class. Then in python you need define a class with the same name inheriting QWidget and a adding FigureCanvas to that widget.
+
+Widget definition in python:
 
 ```python
 
-from threading import Thread
-from threading import Lock
+from PyQt5.QtWidgets import*
 
-# create a shared lock
-lock = Lock()
+from matplotlib.backends.backend_qtagg import FigureCanvas
 
-# creating a class that inherits from Thread class
-class MyThread(Thread):
+from matplotlib.figure import Figure
 
-    def __init__(self, name, data):
+    
+class MplWidget(QWidget):
+    
+    def __init__(self, parent = None):
 
-        Super().__init__(self)
-
-        self.name = name
-
-        self.data = data
-
-    def run(self):
-
-        print("Starting " + self.name)
-
-        # do something with data
-        # when reading or writing data its good practice to use locks to prevent data corruption when entering and exiting the critical section
-
-        with lock:
-
-            # do something with data
-
-    #...
-
-if __name__ == '__main__':
-
-    #create a new thread and run it
-    thread = MyThread("thread1", data)
-    thread.start()
+        QWidget.__init__(self, parent)
+        
+        self.canvas = FigureCanvas(Figure())
+        
+        vertical_layout = QVBoxLayout()
+        vertical_layout.addWidget(self.canvas)
+        
+        self.canvas.axes = self.canvas.figure.add_subplot(111)
+        self.setLayout(vertical_layout)
 
 ```
 
@@ -104,51 +107,49 @@ if __name__ == '__main__':
 
 !Note: animation is not supported in the jupyter notebook but plotting data normally works fine.
 
-## Creating GUI for our application
+## Multithreading
 
-Creating useful GUI for your aplication can be time consuming. A fast and easy way to create GUI is to use a GUI designer. There are several GUI designers for python. The following example shows how to use QT Designer to create a GUI for our application.
-
-- [QT Designer](https://realpython.com/qt-designer-python/#getting-started-with-qt-designer)
-
-Once you desinged your GUI, you can use the `pyuic5` command to convert the `.ui` file to a `.py` file. This file can be imported in your python code.
-
-```pyuic5 -o <output file>.py <input file>.ui```
-
-### Embeding matplotlib plots in QT Designer
-
-- [Embeding matplotlib plots in QT Designer](https://matplotlib.org/stable/gallery/user_interfaces/embedding_in_qt_sgskip.html)
-
-- [Another similar way](https://yapayzekalabs.blogspot.com/2018/11/pyqt5-gui-qt-designer-matplotlib.html)
-
-First you need to create a empty widget in QT Desiner and promote it to is own class. Then in python you need to create a add a FigureCanvas to that widget. You dont really need to create a new class for the widget. You can just add the FigureCanvas to the widget when initializing your GUI
-
-Widget definition in python:
+python can often be slow when processing large amounts of data. To speed up the processing, you can use the `multiprocessing` module. This module allows you to run multiple processes in parallel. The following example shows how to use this module to speed up the processing of a large amount of data. It also useful to use multithreading to implement responsive GUI controls to control the processes in your program.
 
 ```python
 
-from PyQt5.QtWidgets import*
+from threading import Thread
+from threading import Lock
 
-from matplotlib.backends.backend_qtagg import FigureCanvas
+# create a shared lock
+lock = Lock()
 
-from matplotlib.figure import Figure
+# creating a class that inherits from Thread class
+class MyThread(Thread):
 
-    
-class MplWidget(QWidget):
-    
-    def __init__(self, parent = None):
+    def __init__(self, name, data):
 
-        QWidget.__init__(self, parent)
-        
-        self.canvas = FigureCanvas(Figure())
-        
-        vertical_layout = QVBoxLayout()
-        vertical_layout.addWidget(self.canvas)
-        
-        self.canvas.axes = self.canvas.figure.add_subplot(111)
-        self.setLayout(vertical_layout)
+        Super().__init__(self)
+
+        self.name = name
+
+        self.data = data
+
+    def run(self):
+
+        print("Starting " + self.name)
+
+        # do something with data
+        # when reading or writing data its good practice to use locks to prevent data corruption when entering and exiting the critical section
+
+        with lock:
+
+            # do something with data
+
+    #...
+
+if __name__ == '__main__':
+
+    #create a new thread and run it
+    thread = MyThread("thread1", data)
+    thread.start()
 
 ```
-
 
 ## Alternative using pyROOT to plot data
 
