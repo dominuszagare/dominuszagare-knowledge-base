@@ -49,6 +49,8 @@ Alderfer's ERG theory is a theory in psychology proposed by Clayton Alderfer in 
 2. Relatedness needs (Masslow's 3. and 4.)
 3. Growth needs (Masslow's 5.)
 
+![Alderfer's ERG theory compared to Masslow's](../img/HumanNeeds.png)
+
 #### Existence needs
 
 Existence needs are the most basic needs. They are the needs that are required for survival. They include the need for food, water, shelter, and sleep.

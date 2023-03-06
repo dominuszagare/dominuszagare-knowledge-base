@@ -3,6 +3,8 @@
 
 ## Creating GUI for our application
 
+![Application GUI](../img/ploting_data_wowo.png)
+
 Creating useful GUI for your aplication can be time consuming. A fast and easy way to create GUI is to use a GUI designer. The guide linked bellow shows how to install and use QT Designer on multiple platforms Windows Mac Linux. QT Designer is a GUI designer that comes with the PyQt5 library. It is a very powerful tool that allows you to create complex GUIs with ease. It also allows you to embed matplotlib plots in your GUI.
 
 - [QT Designer](https://realpython.com/qt-designer-python/#getting-started-with-qt-designer)
