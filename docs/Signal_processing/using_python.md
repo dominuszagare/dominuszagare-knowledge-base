@@ -7,6 +7,7 @@
 
 Creating useful GUI for your aplication can be time consuming. A fast and easy way to create GUI is to use a GUI designer. The guide linked bellow shows how to install and use QT Designer on multiple platforms Windows Mac Linux. QT Designer is a GUI designer that comes with the PyQt5 library. It is a very powerful tool that allows you to create complex GUIs with ease. It also allows you to embed matplotlib plots in your GUI.
 
+- [Tutorials on python GUIs](https://www.pythonguis.com/pyqt5/)
 - [QT Designer](https://realpython.com/qt-designer-python/#getting-started-with-qt-designer)
 
 Once you desinged your GUI, you can use the `pyuic5` command to convert the `.ui` file to a `.py` file. This file can be imported in your python code.
@@ -112,6 +113,8 @@ if __name__ == '__main__':
 ## Multithreading
 
 python can often be slow when processing large amounts of data. To speed up the processing, you can use the `multiprocessing` module. This module allows you to run multiple processes in parallel. The following example shows how to use this module to speed up the processing of a large amount of data. It also useful to use multithreading to implement responsive GUI controls to control the processes in your program.
+
+- [PyQt multithreading](https://www.pythonguis.com/tutorials/multithreading-pyqt-applications-qthreadpool/)
 
 ```python
 
