@@ -71,7 +71,8 @@ First we need to get the ssh keys on the computer that we want to connect to the
 ls ~/.ssh
 #if there is no keys generate the ssh keys and check again
 ssh-keygen
-#ssh-keygen will ask you where you want to save the keys and for a passphrase
+#when prompted for a file name just press enter
+#when prompted for a passphrase jou can specify one or leave it empty
 ```
 Now we need to copy the public key to the Pi.
 ```bash
@@ -93,6 +94,23 @@ sudo systemctl restart ssh
 ## Connect to Windows PC from the Pi
 
 - [SSH into Windows](https://theitbros.com/ssh-into-windows/)
+- [SSH keys on Windows](https://woshub.com/using-ssh-key-based-authentication-on-windows/)
+- [Wake on LAN](https://www.windowscentral.com/how-enable-and-use-wake-lan-wol-windows-10)
+
+### Setup passwordless login to the PC
+
+Similar to the Raspberry Pi setup:
+1. Generate the ssh keys on the Pi
+2. Generate public and private keys on the PC (if you dont have them already for SSH management)
+```bash
+ssh-keygen -t ed25519
+ssh-add "C:\Users\<user>\.ssh\id_ed25519" #add the private key to the ssh agent
+```
+2. Copy the Pi public key to the PCs authorized_keys file
+```bash
+ssh-copy-id -i ~/.ssh/id_ed25519.pub <user>@<IP_ADDRESS>
+#or manually copy the public key to the authorized_keys file
+```
 
 ### sending magic packets to wake up the PC
 To wake up the PC from sleep, we can use the `wakeonlan` command.
@@ -112,6 +130,11 @@ In Windows 10, the default shutdown behavior puts the system into the hybrid shu
 Disabling the hybrid shutdown in Windows 10: `powercfg -h off`
 Putting the PC to hibernate: `shutdown /h`
 
+Scan for the pc in the network:
+```bash
+sudo nmap -sS -p 22 192.168.1.0/24
+```
+
 From the Pi, we can connect to the PC using the following command.
 `ssh <pc_user>@<ip addres>`
 `ssh ddomi@192.168.0.150`
@@ -128,5 +151,7 @@ vncviewer localhost:1
 ```
 
 - [Remote desktop](https://www.raspberrypi.org/documentation/remote-access/remote-desktop/README.md)
+- [VNC ssh tunneling](https://www.techrepublic.com/article/how-to-connect-to-vnc-using-ssh/)
+
 
 

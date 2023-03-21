@@ -24,3 +24,9 @@ After that we need to enable snap support: `sudo ln -s /var/lib/snapd/snap /snap
 
 Launching anaconda navigator: `anaconda-navigator`
 Choosing environment: `conda activate myenv`
+Creating new environment: `conda create --name myenv`
+removing environment: `conda remove --name myenv --all`
+Installing packages in environment: `conda install -n myenv numpy`
+Activating environment: `conda activate myenv`
+Exporting environment: `conda env export > environment.yml`
+Importing environment: `conda env create -f environment.yml`
