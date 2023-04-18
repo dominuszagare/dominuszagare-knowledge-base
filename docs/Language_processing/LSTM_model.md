@@ -18,11 +18,10 @@ where $\odot$ is the element-wise multiplication.
 
 We can take a sequence of random numbers and try to predict the next number in the sequence. A great example can be found [here](https://machinelearningmastery.com/how-to-develop-lstm-models-for-time-series-forecasting/)
 
-[Here is a link to jupiter notebook example](./LSTM_encoder_decoder_test.ipynb)
+[Here is a link to jupyter notebook example](./LSTM_encoder_decoder_test.ipynb)
 
 See how prediction improves each iteration:
 ![random number prediction](./traning_LSTM_random_number_example.png)
-
 
 ## Example predicting text
 
