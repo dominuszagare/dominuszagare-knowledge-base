@@ -9,9 +9,16 @@ Language processing is a subfield of computer science, information engineering, 
 
 ## Links
 
+- [Convolution neural networks in sentence classification](https://cnvrg.io/cnn-sentence-classification/)
+
 - [Computational linguistics](https://en.m.wikipedia.org/wiki/Computational_linguistics)
-- [WordNet](https://wordnet.princeton.edu/)
-- [GNU Aspell](http://aspell.net/)
+- [WordNet](https://wordnet.princeton.edu/) - Lexical database for the English language
+- [GNU Aspell](http://aspell.net/) - Spell checker
+- [NLTK](http://www.nltk.org/) - Natural Language Toolkit
+- [FastText](https://fasttext.cc/) - Library for efficient learning of word representations and sentence classification.
+- [spaCy](https://spacy.io/) - Industrial-strength Natural Language Processing (NLP) with Python and Cython
+- [KenLM](https://kheafield.com/code/kenlm/) - Fast and memory efficient language model toolkit
+
 
 ## Exercise
 
