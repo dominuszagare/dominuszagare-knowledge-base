@@ -32,16 +32,16 @@ Natural language algorithms ca be developed in a supervised way, using parallel 
 
 When creating a solution to a problem in the field of language processing, we have a lot of tools at our disposal. Many of these tools are open source and can be used for free, see the links above. Choosing the right tool can be daunting in the beginning, but with time and experience you will get a better understanding of the tools and their use cases. Lets give NLTK a try.
 
-### NLTK
+### NLTK, TorchText, Sklearn, and PyTorch
 
-NLTK is a leading platform for building Python programs to work with human language data. It provides easy-to-use interfaces to over 50 corpora and lexical resources such as WordNet, along with a suite of text processing libraries for classification, tokenization, stemming, tagging, parsing, and semantic reasoning, wrappers for industrial-strength NLP libraries, and an active discussion forum.
+NLTK is a platform for building Python programs to work with human language data. It provides easy-to-use interfaces to over 50 corpora and lexical resources such as WordNet, along with a suite of text processing libraries for classification, tokenization, stemming, tagging, parsing, and semantic reasoning, wrappers for industrial-strength NLP libraries, and an active discussion forum.
 
 #### Installation
-
 Instalation is easy, just run the following command in your terminal:
 ```bash
 pip install nltk
 ```
+You can also install NLTK using conda by selecting the nltk package in the Anaconda Navigator.
 #### Downloading data
 
 NLTK comes with a lot of data, but not all of it. To download all the data run the following command in your terminal:
@@ -53,11 +53,12 @@ This will open a window where you can select the data you want to download.
 
 ![NLTK downloader](./NLTK_download_korpuses.png)
 
+[TorchText](https://github.com/pytorch/text) also offers a rich set of functions, pertained models, and datasets. It is a good idea to use both libraries, because they complement each other. Sklern is more of a general purpose machine learning library not specifically focused on NLP.
+
 #### Tokenization and vectorization
 When working with text, we need to convert it into a format that can be used by a machine learning model. Because a machine learning model can only work with numbers, we need to convert the text into a vector of numbers.
 
 One of the first steps is tokenization. Tokenization is the process of breaking a stream of text up into words, phrases, symbols, or other meaningful elements called tokens. Tokens can be individual words, phrases or even whole sentences. The NLTK library provides a number of ways to [tokenize text](https://www.nltk.org/howto/tokenize.html). The most common way is to use the word_tokenize() function. This function will break up a sentence into individual words and punctuation.
-
 
 ```python
 from nltk.tokenize import word_tokenize

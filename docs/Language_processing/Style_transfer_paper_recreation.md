@@ -15,10 +15,11 @@ For this example we will be using Yelp reviews dataset. The reviews considered p
 
 ![clasificator training](./traning_my_casificator.png)
 
-
 ## Classifying content preservation
 
-## Classifying fluency
+ Traning models from scratch is time consuming and expensive. So we use pretrained models found in , [Gensim](https://radimrehurek.com/gensim/) and [spaCy](https://spacy.io/).
+
+
 
 ## Training the style transfer neural network
 
