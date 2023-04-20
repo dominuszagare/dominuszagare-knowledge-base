@@ -2,29 +2,29 @@
 
 Language processing is a subfield of computer science, information engineering, and artificial intelligence concerned with the interactions between computers and human (natural) languages, in particular how to program computers to process and analyze large amounts of natural language data. Challenges in natural language processing frequently involve speech recognition, natural language understanding, and natural language generation.
 
+## Word vectorization, tokenization or Word Embedding
+
+- [Word vectorization](https://www.analyticsvidhya.com/blog/2021/06/part-5-step-by-step-guide-to-master-nlp-text-vectorization-approaches/)
+
+A neural networks can only work with numbers. To use text as input we need to convert it to numbers. This is called vectorization. There are several ways to vectorize text. The most common are: count vectorizer, bag of words and n-grams. In all cases the text is first tokenized:
+- [TorchText tokenizers](https://pytorch.org/text/stable/transforms.html#module-torchtext.transforms)
+- [NLTK tokenizers](https://www.nltk.org/api/nltk.tokenize.html)
+
+## BLEU score
+
+Many of the libaries have built in functions for calculating the BLEU score. The BLEU score is a metric for evaluating a generated sentence to a reference sentence. The BLEU score ranges from 0 to 1. The closer the score is to 1, the better the generated sentence is. The BLEU score is calculated by comparing n-grams of the generated sentence to the reference sentence.
+
+- [BLUE score torchText](https://pytorch.org/text/stable/data_metrics.html#bleu-score)
+
+
 ## Parallel vs non-parallel corpora / supervised vs unsupervised
 
-Natural language algorithms ca be developed in a supervised way, using parallel corpora, i.e a corpus of text in the source language and a corpus of text in the target language. The algorithm is trained to map the source text to the target text. For unsupervised style transfer, we can use non-parallel corpora, i.e. unpaired sentiment to sentiment translation. The algorithm is trained to map the source text to the target text, without the target text being available.
+Text Style Transfer algorithms ca be developed in a supervised way, using parallel corpora, i.e a corpus of text in the source language and a corpus of text in the target language. The algorithm is trained to map the source text to the target text. For unsupervised style transfer, we can use non-parallel corpora, i.e. unpaired sentiment to sentiment translation. The algorithm is trained to map the source text to the target text, without the target text being available.
 
+## Non-sequencial data vs sequencial data
 
-## Literature
+In non-sequential data we don't really care from where the data is generated, it can be from a csv, a database, a file, etc. Usually non-sequential data can be described by some distribution and we don't really care in wat order it is presented to the model. In sequential data we care about the order of the data. For example, in a text generation model, the order of the words is important. In a text classification model, the order of the words is not important.
 
-- [Natural Language Processing with Python](http://www.nltk.org/book/)
-- [RAZPOZNAVANJE IN KLASIFIKACIJA IMENSKIH ENTITET Z UPORABO UMETNIH NEVRONSKIH MREZ](https://dk.um.si/Dokument.php?id=132148&lang=slv)
-
-## Links
-
-- [RNN explained](https://www.youtube.com/watch?v=Y2wfIKQyd1I&ab_channel=codebasics)
-
-- [Convolution neural networks in sentence classification](https://cnvrg.io/cnn-sentence-classification/)
-
-- [Computational linguistics](https://en.m.wikipedia.org/wiki/Computational_linguistics)
-- [WordNet](https://wordnet.princeton.edu/) - Lexical database for the English language
-- [GNU Aspell](http://aspell.net/) - Spell checker
-- [NLTK](http://www.nltk.org/) - Natural Language Toolkit
-- [FastText](https://fasttext.cc/) - Library for efficient learning of word representations and sentence classification.
-- [spaCy](https://spacy.io/) - Industrial-strength Natural Language Processing (NLP) with Python and Cython
-- [KenLM](https://kheafield.com/code/kenlm/) - Fast and memory efficient language model toolkit
 
 ## Creating solutions in practice
 
@@ -90,6 +90,56 @@ This way we converted plain text in our corpus into numerical vectors. These vec
 Now that we have our data in a format that can be used by a machine learning model. For example a LSTM model. We can train a model and use it to predict the next word in a sentence.
 
 - [More on LSTM models](./LSTM_model.md)
+
+## Pre-trained models
+
+Traning language models from scratch is a very time consuming process. It is much faster to use a pre-trained model. There are a number of pre-trained models available. 
+
+The most common are:
+- [GPT-2](https://openai.com/blog/better-language-models/)
+- [BERT](https://huggingface.co/transformers/model_doc/bert.html)
+- [GPT-3](https://openai.com/blog/gpt-3-apps/)
+- [XLNet](https://huggingface.co/transformers/model_doc/xlnet.html)
+- [RoBERTa](https://huggingface.co/transformers/model_doc/roberta.html)
+- [DistilBERT](https://huggingface.co/transformers/model_doc/distilbert.html)
+- [ALBERT](https://huggingface.co/transformers/model_doc/albert.html)
+- [T5](https://huggingface.co/transformers/model_doc/t5.html)
+- [BART](https://huggingface.co/transformers/model_doc/bart.html)
+- [GPT Neo](https://huggingface.co/transformers/model_doc/gpt_neo.html)
+- [Longformer](https://huggingface.co/transformers/model_doc/longformer.html)
+- [Reformer](https://huggingface.co/transformers/model_doc/reformer.html)
+- [LayoutLM](https://huggingface.co/transformers/model_doc/layoutlm.html)
+
+The selection of pre-trained models is growing rapidly. The pre-trained models can be used for a number of tasks, such as:
+- [Text classification](https://huggingface.co/transformers/task_summary.html#text-classification)
+- [Text generation](https://huggingface.co/transformers/task_summary.html#text-generation)
+- [Question answering](https://huggingface.co/transformers/task_summary.html#question-answering)
+- [Summarization](https://huggingface.co/transformers/task_summary.html#summarization)
+- [Translation](https://huggingface.co/transformers/task_summary.html#translation)
+- [Feature extraction](https://huggingface.co/transformers/task_summary.html#feature-extraction)
+- [Named entity recognition](https://huggingface.co/transformers/task_summary.html#named-entity-recognition)
+- [Masked language modeling](https://huggingface.co/transformers/task_summary.html#masked-language-modeling)
+- [Multiple choice](https://huggingface.co/transformers/task_summary.html#multiple-choice)
+- [Conversational](https://huggingface.co/transformers/task_summary.html#conversational)
+- [Language modeling](https://huggingface.co/transformers/task_summary.html#language-modeling)
+- [Sentiment analysis](https://huggingface.co/transformers/task_summary.html#sentiment-analysis)
+- [Token classification](https://huggingface.co/transformers/task_summary.html#token-classification)
+
+## Other Links
+
+- [Usage of models for text generation](https://arxiv.org/abs/2201.05273)
+
+- [RNN explained](https://www.youtube.com/watch?v=Y2wfIKQyd1I&ab_channel=codebasics)
+
+- [Convolution neural networks in sentence classification](https://cnvrg.io/cnn-sentence-classification/)
+
+- [Computational linguistics](https://en.m.wikipedia.org/wiki/Computational_linguistics)
+- [WordNet](https://wordnet.princeton.edu/) - Lexical database for the English language
+- [GNU Aspell](http://aspell.net/) - Spell checker
+- [NLTK](http://www.nltk.org/) - Natural Language Toolkit
+- [FastText](https://fasttext.cc/) - Library for efficient learning of word representations and sentence classification.
+- [spaCy](https://spacy.io/) - Industrial-strength Natural Language Processing (NLP) with Python and Cython
+- [KenLM](https://kheafield.com/code/kenlm/) - Fast and memory efficient language model toolkit
 
 ## Exercise
 
