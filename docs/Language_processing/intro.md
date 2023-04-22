@@ -30,6 +30,9 @@ In non-sequential data we don't really care from where the data is generated, it
 
 - [How to build a text classifier with Python and the Natural Language Toolkit](https://towardsdatascience.com/machine-learning-nlp-text-classification-using-scikit-learn-python-and-nltk-c52b92a7c73a)
 
+- [Text generation strategies](https://huggingface.co/docs/transformers/generation_strategies)
+- [Text generation from scratch in PyTorch](https://wingedsheep.com/building-a-language-model/)
+
 When creating a solution to a problem in the field of language processing, we have a lot of tools at our disposal. Many of these tools are open source and can be used for free, see the links above. Choosing the right tool can be daunting in the beginning, but with time and experience you will get a better understanding of the tools and their use cases. Lets give NLTK a try.
 
 ### NLTK, TorchText, Sklearn, and PyTorch
@@ -126,6 +129,10 @@ The selection of pre-trained models is growing rapidly. The pre-trained models c
 - [Token classification](https://huggingface.co/transformers/task_summary.html#token-classification)
 
 ## Other Links
+
+- [Pretrained Models for text generation paper](https://52paper.github.io/slides/20200813_jamgao.pdf)
+
+- [Text generation with RNN tensorflow tutorial]{https://www.tensorflow.org/text/tutorials/text_generation}
 
 - [Usage of models for text generation](https://arxiv.org/abs/2201.05273)
 
