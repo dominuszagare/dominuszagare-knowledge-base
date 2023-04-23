@@ -8,7 +8,8 @@ Installing NVIDIA drivers on Linux is a bit of a pain. This is a guide on how to
 
 - [Optimus](http://download.nvidia.com/XFree86/Linux-x86_64/510.73.05/README/optimus.html)
 
-- [Instalig for fedora with optimus]{https://docs.fedoraproject.org/en-US/quick-docs/how-to-set-nvidia-as-primary-gpu-on-optimus-based-laptops/}
+- [Instalig for fedora with optimus](https://docs.fedoraproject.org/en-US/quick-docs/how-to-set-nvidia-as-primary-gpu-on-optimus-based-laptops/)
+- [Comprehencive guide for CUDA instalation](https://docs.nvidia.com/cuda/pdf/CUDA_Installation_Guide_Linux.pdf)
 
 ## Prequisites
 
