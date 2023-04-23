@@ -4,13 +4,21 @@
 
 This page contains a list of terms used in the field of artificial intelligence.
 
+## Reinforcement learning
+- [Reinforcment learning 101](https://towardsdatascience.com/reinforcement-learning-101-e24b50e1d292)
+
+## Binary cross-entropy
+- [Binary cross-entropy](https://towardsdatascience.com/understanding-binary-cross-entropy-log-loss-a-visual-explanation-a3ac6025181a)
+
 ## Classification
 
 Classification is a process of assigning a label to a data point. The label can be a class or a category. The goal of classification is to predict the label of a data point based on the labels of similar data points.
 
 ## Regression
 
-Regression is a process of predicting a continuous value. The goal of regression is to predict the value of a data point based on the values of similar data points.
+There are two types of regression: linear regression and logistic regression. Linear regression is a process of predicting a continuous value. The goal of regression is to predict the value of a data point based on the values of similar data points.
+
+Logistic regression is a process of predicting a binary value. The goal of logistic regression is to predict the value of a data point based on the values of similar data points.
 
 ## Activation function
 

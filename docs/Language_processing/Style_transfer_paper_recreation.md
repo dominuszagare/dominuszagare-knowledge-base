@@ -73,6 +73,15 @@ For this example we will be using Yelp reviews dataset. The reviews considered p
 
  Traning models from scratch is time consuming and expensive. So we use pretrained models found in , [Gensim](https://radimrehurek.com/gensim/) and [spaCy](https://spacy.io/).
 
+## Traning langauge translation models for style transfer
+
+Translation is well studied problem in NLP. There are many models that can be used for this task. Transferring the style of a review can be thought of as a special case of translation. n the end the output is a different sequence of words, with hopefully the same meaning.
+
+OpenNMT-tf is a framework for neural machine translation. It is built on top of [Tensorflow](https://www.tensorflow.org/). 
+
+- [Text generation with pytorch](https://www.kaggle.com/code/ab971631/beginners-guide-to-text-generation-pytorch)
+- [Building text generation from scratch](https://wingedsheep.com/building-a-language-model/)
+- [Text generation with tensorflow](https://www.tensorflow.org/text/tutorials/text_generation)
 
 
 ## Training the style transfer neural network

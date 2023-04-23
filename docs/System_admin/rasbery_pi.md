@@ -10,6 +10,8 @@ Download the latest Raspbian image from [here](https://www.raspberrypi.com/softw
 Flash the image to the SD card using [Etcher](https://www.balena.io/etcher/).
 Simply select the image file and the SD card and click on `Flash!`.
 
+-[Get balena etcher for fedora](https://www.linuxcapable.com/how-to-install-balenaetcher-on-fedora-linux/)
+
 ## Enable SSH on Raspberry Pi
 
 To enable SSH on the Raspberry Pi, we dont need to connect a keyboard and a monitor to the Pi. We can simply create an empty file named `ssh` in the boot partition of the SD card. This will enable SSH on the Pi.
