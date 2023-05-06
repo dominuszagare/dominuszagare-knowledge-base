@@ -17,6 +17,7 @@ update the system
 ```bash
 sudo dnf upgrade --refresh
 sudo dnf remove *nvidia* --noautoremove --exclude=nvidia-gpu-firmware
+nvidia-smi
 ```
 
 
