@@ -132,7 +132,7 @@ The selection of pre-trained models is growing rapidly. The pre-trained models c
 
 - [Pretrained Models for text generation paper](https://52paper.github.io/slides/20200813_jamgao.pdf)
 
-- [Text generation with RNN tensorflow tutorial]{https://www.tensorflow.org/text/tutorials/text_generation}
+- [Text generation with RNN tensorflow tutorial](https://www.tensorflow.org/text/tutorials/text_generation)
 
 - [Usage of models for text generation](https://arxiv.org/abs/2201.05273)
 
